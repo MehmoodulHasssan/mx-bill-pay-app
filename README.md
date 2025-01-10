@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# MX Bill Pay
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**MX Bill Pay** is a React Native Android app designed to serve as a digital wallet. It integrates with the dedicated APIs provided by **VFD Microfinance Bank of Nigeria** to enable users to create virtual accounts based on their BVN (Bank Verification Number) and perform seamless bill payments for various Nigerian service providers affiliated with VFD Microfinance Bank.
 
-## Get started
+---
 
-1. Install dependencies
+## Features
 
+### **User Authentication**
+- Secure JWT-based authentication.
+- Authentication state managed using **Redux Toolkit**.
+
+### **Virtual Account Creation**
+- Create virtual accounts linked to a customer's BVN.
+- Easy account setup and management.
+
+### **Bill Payments**
+- Pay bills for Nigerian service providers seamlessly.
+- Integration with VFD Microfinance Bank's APIs for reliability.
+
+### **Global State Management**
+- Centralized state management using **Redux Toolkit**.
+- Smooth handling of authentication and other global states.
+
+### **Data Fetching**
+- Efficient API integration with **TanStack Queries** for data fetching and caching.
+
+### **Cross-Platform Support**
+- Built using **Expo**, ensuring smooth cross-platform compatibility and faster development cycles.
+
+---
+
+## Tech Stack
+
+### **Core Technologies**
+- **React Native**: For building the mobile application.
+- **Expo**: Framework for easier development and deployment.
+
+### **State Management**
+- **Redux Toolkit**: For managing the global application state.
+- **TanStack Queries**: For querying and caching API data.
+
+### **Backend Integration**
+- **LARAVEL**: For communicating between client and vfd wallet Apis.
+- APIs provided by **VFD Microfinance Bank of Nigeria**.
+
+### **Authentication**
+- JWT for secure user authentication.
+
+---
+
+## Installation
+
+### Prerequisites
+
+Ensure the following are installed:
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/mx-bill-pay.git
+   cd mx-bill-pay
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+4. Start the development server:
    ```bash
-    npx expo start
+   npm run start
    ```
 
-In the output, you'll find options to open the app in a
+5. Run the app:
+   - Scan the QR code with the Expo Go app (Android).
+   - Use an Android emulator to view the app.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
